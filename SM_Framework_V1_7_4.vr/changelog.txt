@@ -1,0 +1,175 @@
+Update Version 1.7.4
+- Added Reserve Slots
+
+Update Version 1.7.3
+- Updated SMRT Helicopter Assets
+- Removed Morphine from the basic spawn kit
+- Added 1x IFAK to the basic spawn kit
+- Blacklisted Invisible Backpack
+- Blacklisted Thermal Goshawk Scope
+- Blacklisted Laggy HAMR (PIP)
+
+Update Version 1.7.2
+- Medical crate inventory adjustments
+- Blacklisted the M249 M320
+- Removed Tank
+- Remove Barracks
+- Emptied Inventory of Vehicles
+- Neatened up Entities Hierarchy
+- Removed old (unused) vic camo changing script and it's supporting image assets
+- Updated Nemesis to Orion
+
+Update Version 1.7.1
+- Arsenal Blacklist Update
+
+Update Version 1.7
+- Arsenal Blacklist Update
+
+Update Version 1.6
+- Removed Project Opfor Dependencies
+- Added *Splendid Camera* to Zeus slots (https://discord.com/channels/424105874710331392/1081332737132220487)
+- Added 40mm and transport variant of Humvees
+- Blacklisted invisble NVGs (https://discord.com/channels/424105874710331392/1081894350709076058)
+- Blacklisted invisible Chest Rigs (https://discord.com/channels/424105874710331392/1082678431327723552)
+
+Update Version 1.5.9
+- Death Duration increased from 5 seconds to 30 seconds
+- Fixed SPS Crate bug since the SPS removal
+
+Update Version 1.5.8
+- Kratos ORBAT slots removed
+- HC3 Removed
+- Update Blacklist to meet new mod set
+
+Update Version 1.5.7
+- Added Jerry Cans to the Logistics Shed & to the Crate Spawn Guy (https://discord.com/channels/424105874710331392/1038784710287032412)
+- Removed CROWS vic
+- Removed woodland variants (all switched to desert)
+
+Update Version 1.5.6
+- Blacklisted the Mk3A1 (https://github.com/StowMarines/StowMarines-Community/issues/99)
+- Blacklisted the invisible backpack (https://github.com/StowMarines/StowMarines-Community/issues/105)
+
+Update Version 1.5.5
+- Blacklisted the ASP-1 Kir (https://github.com/StowMarines/StowMarines-Community/issues/102)
+- Blacklisted some thermal scopes (https://github.com/StowMarines/StowMarines-Community/issues/101)
+- Blacklisted some throwables (https://github.com/StowMarines/StowMarines-Community/issues/99)
+- Removed old TRYK Blacklisted items
+
+Update Version 1.5.4
+- Swapped RHS littlebirds out for SMRT littlebirds
+- Removed Hades slot
+- Removed ATC/VTS NET
+- Changed Apollo NET to 99
+- Changed Merlin Texture to grey
+- Added camo nets and green camo to Leopard 2A4
+- Changed FSG Ammo Contents
+- Fixed CMO ORBAT positioning
+
+Update Version 1.5.3.2
+- Remove 40mm Vics
+
+Update Version 1.5.3.1:
+- Removed cleanup script
+
+Update Version 1.5.3:
+- Changed Iris to Nemesis
+- Removed duplicate intro image
+- Changed intro image
+- Added a cleanup script that deletes dead bodies every 5 minutes to save on FPS
+- You can now spawn Vehicle Ammo, Repair and Refuel boxes at the logistics shed
+
+Update Version 1.5.2:
+- CMTs changed from Doctors to Regular Medics
+- M1277 CROWS swapped for M1245 CROWS (M2 & Mk19)
+- Vehicle Inventories Cleared by Default (aside from Apollo Vics)
+- M1165A1 GMV (SAG-2/M2/M240) Added
+- Multiple crate spawn/destruction bug fixed again
+- Vehicle ReTexture Station & Scripts Removed
+- Script added to force teleport players out of destroyed helicopter wrecks
+
+Hotfix 1.5.1:
+- Multiple crate spawn/destruction bug fixed
+- Arsenal Blacklist Updated
+
+Update Version 1.5:
+- Medical Crates lowered to just one in the Field Hospital
+- New Crate Spawner (Logistics Shed) system implemented
+- Werthles Dependency Removed
+- Duplicate HQ Marker Removed
+- Markers changed from Independent to Blufor
+- Removed Tryk Dependency
+
+Hotfix 1.4.1:
+- Texture Changer Icons missing fixed
+
+Update Version 1.4:
+- SMRT Blackhawk added
+- SMRT Merlin Added
+- SMRT MRZR 4 Added
+- ISIS Vehicles Removed
+- SMRT Leopard 2A4 Added
+- MRAPs Added (CROWS/Standard - M2/Mk19)
+- Radio Net's Altered
+- Sling Load Fix Implemented
+- Vehicle Ammo Crate Added
+- New Intro Pic
+- New RRR Vehicles
+- Damage diabled for Framework buildings
+- Dyanmic Simulation enabled for Framework buildings
+- Vehicle Retexture Station Added
+- SM Logo added to \img for use in missions
+- Werthles Module Added & Configured
+- 3x Headless Client Virtual Entities Added & Configured
+
+Update Version 1.3.3:
+- Max Players changed to 44 (to match the ORBAT)
+- Artemis slots removed
+- SUV removed
+- Strechers, Office Chair and Desk removed from medical hut
+- Zeus spawn location changed to previous Artemis spawn location to allow more room in the barracks
+- Helipad Checks script optimised
+
+Update Version 1.3.2:
+
+- Added Helios 5 slot
+- Kratos are now advanced engineers
+- MELB requirement removed
+
+Update Version 1.3.1:
+
+- Removed Misc Operator Slots
+- Zeus slots renumbered (game master modules edited to match)
+- Helios 5 slot added (lobby order update to match)
+- Max Players altered to match that of the server
+- Arsenal Blacklist updated
+
+Update Version 1.3:
+
+-Corrected LR Nets
+-Helipad checks fixed
+-Helipad markers now dynamically change position (depending on where the mission maker places the helipad)
+-Intro image fixed/updated
+
+Update Version 1.2:
+
+-Removed Arsenal Netting
+-Remoed Theseus
+-Updated radio nets
+-ASR AI Requirement Removed
+-Group ID's fixed
+-Athena renamed to Zeus
+-Game Master Modules corrected to meet new zeus var names
+-Halved the amount of spare slots
+-Added Kratos
+-Added Athena
+-Corrected ORBAT
+-Unit Commander renamed to Mission Commander
+-2nd in Command renamed to Platoon Sergeant & Intelligence Officer
+-Hades 1 renamed to hades
+-Hades 2 renamed to Iris
+-Spawn positions slightly altered
+-Default Map Marker locations corrected
+-Helipad checks script carried over from the training map
+-Arsenal Blacklist updated
+-Arsenal blacklist initialisation optimised
