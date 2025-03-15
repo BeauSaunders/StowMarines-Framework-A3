@@ -60,7 +60,7 @@ Once your chosen map has loaded, paste the framework (CTRL-V) and allign all of 
 
 #### 2e. Config Editing
 
-Once oyu have created your mission, find the framework folder (in file explorer), and copy all files and folders other than the mission.sqm, and paste it in your created mission folder.
+Once you have created your mission, find the framework folder (in file explorer), and copy all files and folders other than the mission.sqm, and paste it in your created mission folder.
 
 Generally the only thing you will want to edit in your copied files is the description.ext. 
 
