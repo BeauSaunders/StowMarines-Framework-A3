@@ -98,7 +98,7 @@ If you don't already have FileZilla, download it [here](https://filezilla-projec
 
 In FileZilla, go to File>Site Manager and Create a New Site (name this whatever you like), filling in the following details:
 
-Host: 188.165.239.165
+Host: 147.135.139.33
 Encryption: Only Use Platin FTP
 User: MissionMaker
 Password: *ASK A CONTRACT BROKER*
