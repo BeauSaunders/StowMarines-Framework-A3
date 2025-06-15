@@ -98,10 +98,10 @@ If you don't already have FileZilla, download it [here](https://filezilla-projec
 
 In FileZilla, go to File>Site Manager and Create a New Site (name this whatever you like), filling in the following details:
 
-Host: 147.135.139.33
-Encryption: Only Use Platin FTP
-User: MissionMaker
-Password: *ASK A CONTRACT BROKER*
+- Host: 147.135.139.33
+- Encryption: Only Use Platin FTP
+- User: MissionMaker
+- Password: *ASK A CONTRACT BROKER*
 
 Click Ok. You can now connect to the server straight away by going to File>Site Manager, selecting the site and clicking connect. If you successfully connect, you will see the server's current mission files appear in the right-side panel.
 
