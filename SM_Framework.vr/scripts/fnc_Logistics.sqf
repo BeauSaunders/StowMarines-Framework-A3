@@ -3,7 +3,7 @@ InfAmmo = {
 	_spCheck = nearestObjects[_crateSpawn,["landVehicle","Air","Thing","CAManBase"],3] select 0;
 	
 	if (isNil "_spCheck") then {
-		_box = "Box_NATO_Wps_F" createVehicle _crateSpawn;
+		_box = "ACE_Box_Ammo" createVehicle _crateSpawn;
 		clearWeaponCargoGlobal _box; clearMagazineCargoGlobal _box; clearItemCargoGlobal _box;
 
 		_box addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Pull", 20]; //30rnd STANAG (Puller) M855A1
@@ -12,6 +12,9 @@ InfAmmo = {
 		_box addMagazineCargoGlobal ["20Rnd_762x51_Mag", 10]; //7.62 mm 20Rnd Mag
 		_box addMagazineCargoGlobal ["rhsusf_20Rnd_762x51_SR25_m993_Mag", 10]; //20rnd SR-25 M993 AP
 		_box addMagazineCargoGlobal ["rhs_mag_m67", 8]; //M67 Fragmentation Grenade
+		_box addMagazineCargoGlobal ["SmokeShell", 10]; //White Smoke Grenade
+		_box addMagazineCargoGlobal ["SmokeShellRed", 4]; //Red Smoke Grenade
+		_box addMagazineCargoGlobal ["ACE_M84", 6]; //Stun Grenades
 		
 		hint "Crate Spawned";
     } else {
@@ -19,20 +22,16 @@ InfAmmo = {
     };
 };
 
-FSG = {
+MortarRounds = {
 	_crateSpawn = (getPosATL crateSpawn);
 	_spCheck = nearestObjects[_crateSpawn,["landVehicle","Air","Thing","CAManBase"],3] select 0;
 	
 	if (isNil "_spCheck") then {
-		_box = "Box_NATO_Wps_F" createVehicle _crateSpawn;
+		_box = "ACE_Box_Ammo" createVehicle _crateSpawn;
 		clearWeaponCargoGlobal _box; clearMagazineCargoGlobal _box; clearItemCargoGlobal _box;
 
-		_box addMagazineCargoGlobal ["rhsgref_30rnd_556x45_vhs2_t", 10]; //30rnd VHS-2 M856A1 (Tracer)
-		_box addMagazineCargoGlobal ["rhsusf_100Rnd_762x51_m62_tracer", 10]; //100rnd M240 Box M62 (Tracer)
-		_box addMagazineCargoGlobal ["rhsusf_100Rnd_762x51_m61_ap", 10]; //100rnd M240 Box M61 AP
-		_box addMagazineCargoGlobal ["rhs_mag_M441_HE", 10]; //M441 HE Grenade Round
-		_box addMagazineCargoGlobal ["rhsusf_100Rnd_762x51", 10]; //100rnd M240 Box M80
-		_box addMagazineCargoGlobal ["200Rnd_65x39_cased_Box_Tracer_Red", 5]; //6.5mm 200Rnd Belt Tracer (Red)
+		_box addMagazineCargoGlobal ["ACE_1Rnd_82mm_Mo_HE", 16]; //82mm HE Mortar Round
+		_box addMagazineCargoGlobal ["ACE_1Rnd_82mm_Mo_Smoke", 6]; //82mm White Smoke Mortar Round
 
 		hint "Crate Spawned";
     } else {
@@ -58,7 +57,7 @@ Rockets = {
     };
 };
 
-Missiles = {
+ATAA = {
 	_crateSpawn = (getPosATL crateSpawn);
 	_spCheck = nearestObjects[_crateSpawn,["landVehicle","Air","Thing","CAManBase"],3] select 0;
 	
@@ -67,7 +66,8 @@ Missiles = {
 		clearWeaponCargoGlobal _box; clearMagazineCargoGlobal _box; clearItemCargoGlobal _box; clearBackpackCargoGlobal _box;
 
 		_box addMagazineCargoGlobal ["rhs_fgm148_magazine_AT", 3]; //FGM-148 Missile
-		_box addMagazineCargoGlobal ["rhs_fim92_mag", 2]; //FIM-92F
+		_box addMagazineCargoGlobal ["rhs_fim92_mag", 3]; //FIM-92F
+		_box addWeaponCargoGlobal ["launch_NLAW_F", 2]; //NLAW
 		
 		hint "Crate Spawned";
     } else {
@@ -75,72 +75,20 @@ Missiles = {
     };
 };
 
-Explosives = {
+FSG = {
 	_crateSpawn = (getPosATL crateSpawn);
 	_spCheck = nearestObjects[_crateSpawn,["landVehicle","Air","Thing","CAManBase"],3] select 0;
 	
 	if (isNil "_spCheck") then {
-		_box = "Box_NATO_AmmoOrd_F" createVehicle _crateSpawn;
-		clearWeaponCargoGlobal _box; clearMagazineCargoGlobal _box; clearItemCargoGlobal _box;
-
-		_box addItemCargoGlobal ["ACE_M26_Clacker", 2]; //M152 Firing Device x2
-		_box addItemCargoGlobal ["ACE_DefusalKit", 2]; //Defusal Kit x2
-		_box addMagazineCargoGlobal ["rhs_ec400_sand_mag", 8]; //TNT 400
-		_box addMagazineCargoGlobal ["rhs_ec200_sand_mag", 8]; //TNT 200
-		_box addMagazineCargoGlobal ["rhs_ec75_sand_mag", 8]; //TNT 75
-		_box addMagazineCargoGlobal ["rhsusf_m112_mag", 4]; //M112
-		_box addMagazineCargoGlobal ["rhsusf_m112x4_mag", 2]; //M112 x4
-		
-		hint "Crate Spawned";
-    } else {
-		hint "Something is in the way";
-    };
-};
-
-Util = {
-	_crateSpawn = (getPosATL crateSpawn);
-	_spCheck = nearestObjects[_crateSpawn,["landVehicle","Air","Thing","CAManBase"],3] select 0;
-	
-	if (isNil "_spCheck") then {
-		_box = "Box_NATO_Support_F" createVehicle _crateSpawn;
+		_box = "ACE_Box_Ammo" createVehicle _crateSpawn;
 		clearWeaponCargoGlobal _box; clearMagazineCargoGlobal _box; clearItemCargoGlobal _box; clearBackpackCargoGlobal _box;
 
-		_box addItemCargoGlobal ["ACE_EarPlugs", 20]; //Ear Plugs
-		_box addItemCargoGlobal ["UK3CB_ANPVS7", 20]; //AN/PVS-7B
-		_box addItemCargoGlobal ["ACE_CableTie", 20]; //Cable Ties
-		_box addItemCargoGlobal ["rhs_mag_mk84", 10]; //M84 Stun Grenade
-		_box addItemCargoGlobal ["rhs_mag_an_m8hc", 10]; //AN-M8HC White Smoke
-		_box addMagazineCargoGlobal ["rhs_mag_m397_HET", 10]; //M397 HET Grenade Round
-		_box addMagazineCargoGlobal ["rhs_mag_M433_HEDP", 10]; //M443 HEDP Grenade Round
-		_box addItemCargoGlobal ["rhs_mag_m18_green", 5]; //M18 Smoke Grenade (Green)
-		_box addItemCargoGlobal ["rhs_mag_m18_red", 5]; //M18 Smoke Grenade (Red)
-		_box addItemCargoGlobal ["ACE_EntrenchingTool", 5]; //Entyrenching Tool
+		_box addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Pull_Tracer_Red", 30]; //30rnd STANAG (Puller) M855A1 (Tracer)
+		_box addMagazineCargoGlobal ["1Rnd_HE_Grenade_shell", 15]; //340mm HE Grenade Round
+		_box addMagazineCargoGlobal ["ACE_SpareBarrel", 4]; //Spare Barrels
+		_box addItemCargoGlobal ["ACE_WaterBottle", 5]; //Water Bottles
 		
 		hint "Crate Spawned";
-    } else {
-		hint "Something is in the way";
-    };
-};
-
-Jerry_W = {
-	_crateSpawn = (getPosATL crateSpawn);
-	_spCheck = nearestObjects[_crateSpawn,["landVehicle","Air","Thing","CAManBase"],3] select 0;
-	
-	if (isNil "_spCheck") then {
-		_box = "rhsusf_props_ScepterMFC_OD" createVehicle _crateSpawn;		
-		hint "Jerry Can Spawned";
-    } else {
-		hint "Something is in the way";
-    };
-};
-
-Jerry_D = {
-	_crateSpawn = (getPosATL crateSpawn);
-	_spCheck = nearestObjects[_crateSpawn,["landVehicle","Air","Thing","CAManBase"],3] select 0;
-	
-	if (isNil "_spCheck") then {
-		_box = "rhsusf_props_ScepterMFC_D" createVehicle _crateSpawn;		
-		hint "Jerry Can Spawned";
     } else {
 		hint "Something is in the way";
     };
@@ -213,6 +161,19 @@ Medical = {
 		_box addItemCargoGlobal ["ACE_tourniquet", 15]; //Torniquet
 		
 		hint "Crate Spawned";
+    } else {
+		hint "Something is in the way";
+    };
+};
+
+Wheel = {
+	_crateSpawn = (getPosATL crateSpawn);
+	_spCheck = nearestObjects[_crateSpawn,["landVehicle","Air","Thing","CAManBase"],3] select 0;
+	
+	if (isNil "_spCheck") then {
+		_box = "ACE_Wheel" createVehicle _crateSpawn;
+
+		hint "Spare Wheel Spawned";
     } else {
 		hint "Something is in the way";
     };

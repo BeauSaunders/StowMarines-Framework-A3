@@ -1,3 +1,25 @@
+Version 1.8
+- Added a Spectate Laptop
+- Added Team Crates (with a flag)
+- Added AT/AA Crate
+- Added FSG Ammo Crate
+- Added Mortar Rounds Crate
+- Added Option to Spawn a Spare Wheel at the Logistics Shed
+- Added New Default Loading Screen Image
+- Fixed incorrect camo of one of the RRR trucks
+- Fixed Arsenal blacklist issue with SPS [thanks Grim]
+- Fixed Lobby ORBAT issues
+- Removed Helipad Checks Script
+- Removed unused jerry cans
+- Removed Jerry Can Spawner
+- Removed Utils Crate Spawner
+- Removed Explosives Crate Spawner
+- Blacklisted 40mm Pike Round
+- Moved vehicle assets into one subfolder
+- Neatened Spawnpoints for team placement clarity
+- Renamed 'Spawn Crate' to 'Request' on the Logistics Guy
+
+
 Version 1.7.5
 - Blacklisted HS-50
 - Mission Commander slot corrected to Platoon Leader

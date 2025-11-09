@@ -27,23 +27,23 @@
 logistics switchMove "AmovPercMstpSnonWnonDnon_Ease";
 logistics disableAI "all";
 
-helipadChecks = compile preprocessFile "scripts\helipadChecks.sqf";
 fnc_Logistics = compile preprocessFile "scripts\fnc_Logistics.sqf";
 
-//Logistics Crate Guy
-spawnCrate = ["spawnCrate","Spawn Crate","",{hint"Please choose your crate type";},{true}] call ace_interact_menu_fnc_createAction;
+//Spectate Laptop
+spectate = ["spectate","Spectate","",{[true, false, false] call ace_spectator_fnc_setSpectator;},{true}] call ace_interact_menu_fnc_createAction;
+
+//Logistics Crate Guy - Creates actions (parents them in initplayerlocal.sqf)
+spawnCrate = ["spawnCrate","Request","",{hint"Please choose what you want to request";},{true}] call ace_interact_menu_fnc_createAction;
 ammoCrate = ["ammoCrate","Standard Ammunition","",{["InfAmmo"] remoteExec ["fnc_Logistics", player];},{true}] call ace_interact_menu_fnc_createAction;
-FSGCrate = ["FSGCrate","FSG Ammunition","",{["FSG"] remoteExec ["fnc_Logistics", player];},{true}] call ace_interact_menu_fnc_createAction;
+MortarRounds = ["MortarRounds","Mortar Rounds","",{["MortarRounds"] remoteExec ["fnc_Logistics", player];},{true}] call ace_interact_menu_fnc_createAction;
 rocketsCrate = ["rocketsCrate","Rockets","",{["Rockets"] remoteExec ["fnc_Logistics", player];},{true}] call ace_interact_menu_fnc_createAction;
-missilesCrate = ["missilesCrate","Missiles","",{["Missiles"] remoteExec ["fnc_Logistics", player];},{true}] call ace_interact_menu_fnc_createAction;
-explosivesCrate = ["explosivesCrate","Explosives","",{["Explosives"] remoteExec ["fnc_Logistics", player];},{true}] call ace_interact_menu_fnc_createAction;
-utilCrate = ["utilCrate","Utilities","",{["Util"] remoteExec ["fnc_Logistics", player];},{true}] call ace_interact_menu_fnc_createAction;
-jerry_W_Logi = ["jerry_W_Logi","Jerry Can (Woodland)","",{["Jerry_W"] remoteExec ["fnc_Logistics", player];},{true}] call ace_interact_menu_fnc_createAction;
-jerry_D_Logi = ["jerry_D_Logi","Jerry Can (Desert)","",{["Jerry_D"] remoteExec ["fnc_Logistics", player];},{true}] call ace_interact_menu_fnc_createAction;
+FSGCrate = ["FSGCrate","FSG Ammo","",{["FSG"] remoteExec ["fnc_Logistics", player];},{true}] call ace_interact_menu_fnc_createAction;
+ATAACrate = ["ATAACrate","AT/AA Crate","",{["ATAA"] remoteExec ["fnc_Logistics", player];},{true}] call ace_interact_menu_fnc_createAction;
 vicAmmoCrate = ["vicAmmoCrate","Vehicle Ammunition","",{["VicAmmo"] remoteExec ["fnc_Logistics", player, true];},{true}] call ace_interact_menu_fnc_createAction;
 vicFuelCrate = ["vicFuelCrate","Vehicle Fuel","",{["VicFuel"] remoteExec ["fnc_Logistics", player, true];},{true}] call ace_interact_menu_fnc_createAction;
 vicRepairCrate = ["vicRepairCrate","Vehicle Repair","",{["VicRepair"] remoteExec ["fnc_Logistics", player, true];},{true}] call ace_interact_menu_fnc_createAction;
 medCrate = ["medCrate","Medical Supplies","",{["Medical"] remoteExec ["fnc_Logistics", player];},{true}] call ace_interact_menu_fnc_createAction;
+SpareWheel = ["SpareWheel","Spare Wheel","",{["Wheel"] remoteExec ["fnc_Logistics", player];},{true}] call ace_interact_menu_fnc_createAction;
 emptyCrate = ["emptyCrate","Empty Crate","",{["Empty"] remoteExec ["fnc_Logistics", player];},{true}] call ace_interact_menu_fnc_createAction;
 
 //Sling Load Fix

@@ -1,5 +1,5 @@
 author					= "[SM]BJS";
-loadScreen				= "img\intro.paa";
+loadScreen				= "img\loadImg.paa";
 onLoadName				= "StowMarines Framework";
 onLoadMission			= "StowMarines Private Military Company";
 DisabledAI				= 1;
