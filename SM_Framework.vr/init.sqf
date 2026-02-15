@@ -45,6 +45,7 @@ vicRepairCrate = ["vicRepairCrate","Vehicle Repair","",{["VicRepair"] remoteExec
 medCrate = ["medCrate","Medical Supplies","",{["Medical"] remoteExec ["fnc_Logistics", player];},{true}] call ace_interact_menu_fnc_createAction;
 SpareWheel = ["SpareWheel","Spare Wheel","",{["Wheel"] remoteExec ["fnc_Logistics", player];},{true}] call ace_interact_menu_fnc_createAction;
 emptyCrate = ["emptyCrate","Empty Crate","",{["Empty"] remoteExec ["fnc_Logistics", player];},{true}] call ace_interact_menu_fnc_createAction;
+engineer = ["engineer","Request Engineer Perms","",{["EngineerPerms"] remoteExec ["fnc_Logistics", player];},{true}] call ace_interact_menu_fnc_createAction;
 
 //Sling Load Fix
 ["lsl_slingLocality", 

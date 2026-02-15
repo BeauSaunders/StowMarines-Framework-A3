@@ -192,6 +192,12 @@ Empty = {
     };
 };
 
+EngineerPerms = {
+	player setVariable ["ace_isEngineer", 1, true];
+	
+	hint "You have been promoted to engineer.";
+};
+
 
 //Main
 _crate = (_this select 0);

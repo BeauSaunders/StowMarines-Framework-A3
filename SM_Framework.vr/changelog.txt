@@ -1,3 +1,14 @@
+Version 1.8.2
+- Unblacklisted AK-103s & AK-104s
+- Blacklisted AA-12 & Crossbows
+- Changed Team Crates type to Nato Special Weapons [larger volume]
+- Disable the Team Crate Markers Simulation's
+- Added an option on the Logistics Guy to promote yourself to engineer
+
+Version 1.8.1
+- Fixed Arsenal/SPS bug
+- Fixed RRR Truck's randomly changing Camo
+
 Version 1.8
 - Added a Spectate Laptop
 - Added Team Crates (with a flag)
@@ -18,6 +29,7 @@ Version 1.8
 - Moved vehicle assets into one subfolder
 - Neatened Spawnpoints for team placement clarity
 - Renamed 'Spawn Crate' to 'Request' on the Logistics Guy
+- Adjusted Standard Ammo Crate Contents
 
 
 Version 1.7.5
