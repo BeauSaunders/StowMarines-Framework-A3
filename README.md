@@ -90,7 +90,7 @@ Once you have created your mission, export it in the 3DEN editor by going to Fil
 
 #### 3b. Download FileZilla
 
-If you don't already have FileZilla, download it [here](https://filezilla-project.org/download.php?type=client) and install the application. This will allow you to upload your file to the Arma 3 server.
+If you don't already have FileZilla, download it [here](https://filezilla-project.org/download.php?show_all=1) and install the application. This will allow you to upload your file to the Arma 3 server.
 
 <br>
 
